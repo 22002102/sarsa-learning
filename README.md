@@ -1,13 +1,35 @@
 # SARSA Learning Algorithm
 
 ## AIM
-To develop a Python program to find the optimal policy for the given RL environment using SARSA-Learning and compare the state values with the Monte Carlo method.
+To implement the SARSA algorithm to teach an agent how to choose actions that lead to the best outcomes in a given environment. The aim is to evaluate the agent's performance and visualize its learning process.
 
 ## PROBLEM STATEMENT
-Explain the problem statement.
+The goal is to create a system that helps an agent learn the best actions to take in an environment to maximize rewards over time. We will use the SARSA (State-Action-Reward-State-Action) algorithm, which is a type of reinforcement learning. The agent will learn from its experiences by interacting with the environment and adjusting its strategy accordingly.
 
 ## SARSA LEARNING ALGORITHM
-Include the steps involved in the SARSA Learning algorithm
+### Step 1:
+Initialize the Q-value table with zeros for all state-action pairs.
+
+### Step 2:
+Set the parameters: learning rate (alpha), discount factor (gamma), and exploration rate (epsilon).
+
+### Step 3:
+For each episode, reset the environment and observe the initial state.
+
+### Step 4:
+Choose an action based on the current state's Q-values using an epsilon-greedy policy.
+
+### Step 5:
+Take the chosen action, observe the reward and the next state.
+
+### Step 6:
+Choose the next action using the same epsilon-greedy policy.
+
+### Step 7:
+Update the Q-value for the current state-action pair using the SARSA update rule.
+
+### Step 8:
+Repeat steps 4-7 until the episode ends, then repeat for multiple episodes.
 
 ## SARSA LEARNING FUNCTION
 ```
@@ -80,5 +102,4 @@ def sarsa(env,
 ![image](https://github.com/user-attachments/assets/d52c7651-066f-4d3c-a9b4-3c7b3f97bf98)
 
 ## RESULT:
-
-Write your result here
+Thus the program to implement SARSA algorithm and comparing it with Monte-Carlo prediction is successfully completed.
